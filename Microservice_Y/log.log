@@ -217,3 +217,9 @@
 2025-01-19 18:40:00,085 - connection - DEBUG - _on_reader_done: 538 - Reader exited for <Connection: "amqp://guest:******@localhost:5672/" at 0x2612bedcd20>
 2025-01-19 18:40:00,085 - connection - DEBUG - __writer: 753 - Writer exited for <Connection: "amqp://guest:******@localhost:5672/" at 0x2612bedcd20>
 2025-01-19 18:40:00,086 - connection - DEBUG - _on_close: 785 - Closing connection <Connection: "amqp://guest:******@localhost:5672/" at 0x2612bedcd20> cause: CancelledError()
+2025-01-20 12:19:18,790 - proactor_events - DEBUG - __init__: 631 - Using proactor: IocpProactor
+2025-01-20 12:19:18,833 - robust_connection - DEBUG - __connection_factory: 121 - Starting connection factory for <RobustConnection: "amqp://guest:******@localhost:5672/" 0 channels>
+2025-01-20 12:19:18,833 - robust_connection - DEBUG - __connection_factory: 123 - Waiting for connection close event for <RobustConnection: "amqp://guest:******@localhost:5672/" 0 channels>
+2025-01-20 12:19:18,833 - robust_connection - DEBUG - __connection_factory: 134 - Connection attempt for <RobustConnection: "amqp://guest:******@localhost:5672/" 0 channels>
+2025-01-20 12:19:18,833 - connection - DEBUG - connect: 455 - Connecting to: amqp://guest:******@localhost:5672/
+2025-01-20 12:19:22,932 - robust_connection - INFO - _on_connection_close: 83 - Connection to amqp://guest:******@localhost:5672/ closed. Reconnecting after 5 seconds.
