@@ -1,0 +1,219 @@
+2025-01-19 18:38:02,274 - proactor_events - DEBUG - __init__: 631 - Using proactor: IocpProactor
+2025-01-19 18:38:02,286 - robust_connection - DEBUG - __connection_factory: 121 - Starting connection factory for <RobustConnection: "amqp://guest:******@localhost:5672/" 0 channels>
+2025-01-19 18:38:02,286 - robust_connection - DEBUG - __connection_factory: 123 - Waiting for connection close event for <RobustConnection: "amqp://guest:******@localhost:5672/" 0 channels>
+2025-01-19 18:38:02,286 - robust_connection - DEBUG - __connection_factory: 134 - Connection attempt for <RobustConnection: "amqp://guest:******@localhost:5672/" 0 channels>
+2025-01-19 18:38:02,287 - connection - DEBUG - connect: 455 - Connecting to: amqp://guest:******@localhost:5672/
+2025-01-19 18:38:29,958 - proactor_events - DEBUG - __init__: 631 - Using proactor: IocpProactor
+2025-01-19 18:38:29,964 - robust_connection - DEBUG - __connection_factory: 121 - Starting connection factory for <RobustConnection: "amqp://guest:******@localhost:5672/" 0 channels>
+2025-01-19 18:38:29,964 - robust_connection - DEBUG - __connection_factory: 123 - Waiting for connection close event for <RobustConnection: "amqp://guest:******@localhost:5672/" 0 channels>
+2025-01-19 18:38:29,964 - robust_connection - DEBUG - __connection_factory: 134 - Connection attempt for <RobustConnection: "amqp://guest:******@localhost:5672/" 0 channels>
+2025-01-19 18:38:29,965 - connection - DEBUG - connect: 455 - Connecting to: amqp://guest:******@localhost:5672/
+2025-01-19 18:38:30,038 - robust_connection - DEBUG - __connection_factory: 140 - Connection made on <RobustConnection: "amqp://guest:******@localhost:5672/" 0 channels>
+2025-01-19 18:38:30,038 - connection - DEBUG - channel: 193 - Creating AMQP channel for connection: <RobustConnection: "amqp://guest:******@localhost:5672/" 0 channels>
+2025-01-19 18:38:30,038 - connection - DEBUG - channel: 202 - Channel created: <aio_pika.robust_channel.RobustChannel object at 0x000002612BE8D940>
+2025-01-19 18:38:30,039 - connection - DEBUG - __writer: 717 - Prepare to send ChannelFrame(payload=b'\x01\x00\x01\x00\x00\x00\x06\x00\x14\x00\n\x010\xce', should_close=False, drain_future=None)
+2025-01-19 18:38:30,041 - connection - DEBUG - __reader: 642 - Received frame <Channel.OpenOk object at 0x2612bedb510> in channel #1 weight=16 on <Connection: "amqp://guest:******@localhost:5672/" at 0x2612bedcd20>
+2025-01-19 18:38:30,041 - connection - DEBUG - __writer: 717 - Prepare to send ChannelFrame(payload=b'\x01\x00\x01\x00\x00\x00\x05\x00U\x00\n\x00\xce', should_close=False, drain_future=None)
+2025-01-19 18:38:30,043 - connection - DEBUG - __reader: 642 - Received frame <Confirm.SelectOk object at 0x2612be8e900> in channel #1 weight=12 on <Connection: "amqp://guest:******@localhost:5672/" at 0x2612bedcd20>
+2025-01-19 18:38:30,043 - connection - DEBUG - __writer: 717 - Prepare to send ChannelFrame(payload=b'\x01\x00\x01\x00\x00\x00\x0b\x00<\x00\n\x00\x00\x00\x00\x00\x00\x00\xce', should_close=False, drain_future=None)
+2025-01-19 18:38:30,044 - connection - DEBUG - __reader: 642 - Received frame <Basic.QosOk object at 0x2612be8ea50> in channel #1 weight=12 on <Connection: "amqp://guest:******@localhost:5672/" at 0x2612bedcd20>
+2025-01-19 18:38:30,045 - queue - DEBUG - declare: 94 - Declaring queue: <RobustQueue(amq.rabbitmq.reply-to): auto_delete=False, durable=False, exclusive=False, arguments={'x-queue-type': 'classic'}
+2025-01-19 18:38:30,045 - connection - DEBUG - __writer: 717 - Prepare to send ChannelFrame(payload=b'\x01\x00\x01\x00\x00\x00:\x002\x00\n\x00\x00\x15amq.rabbitmq.reply-to\x01\x00\x00\x00\x19\x0cx-queue-typeS\x00\x00\x00\x07classic\xce', should_close=False, drain_future=None)
+2025-01-19 18:38:30,046 - connection - DEBUG - __reader: 642 - Received frame <Queue.DeclareOk object at 0x2612bee90e0> in channel #1 weight=42 on <Connection: "amqp://guest:******@localhost:5672/" at 0x2612bedcd20>
+2025-01-19 18:38:30,057 - queue - DEBUG - declare: 94 - Declaring queue: <RobustQueue(setup_table): auto_delete=False, durable=False, exclusive=False, arguments={'x-queue-type': 'classic'}
+2025-01-19 18:38:30,057 - connection - DEBUG - __writer: 717 - Prepare to send ChannelFrame(payload=b'\x01\x00\x01\x00\x00\x000\x002\x00\n\x00\x00\x0bsetup_table\x00\x00\x00\x00\x19\x0cx-queue-typeS\x00\x00\x00\x07classic\xce', should_close=False, drain_future=None)
+2025-01-19 18:38:30,062 - connection - DEBUG - __reader: 642 - Received frame <Queue.DeclareOk object at 0x2612beeba20> in channel #1 weight=32 on <Connection: "amqp://guest:******@localhost:5672/" at 0x2612bedcd20>
+2025-01-19 18:38:30,063 - queue - DEBUG - consume: 229 - Start to consuming queue: <RobustQueue(setup_table): auto_delete=False, durable=False, exclusive=False, arguments={'x-queue-type': 'classic'}
+2025-01-19 18:38:30,063 - connection - DEBUG - __writer: 717 - Prepare to send ChannelFrame(payload=b'\x01\x00\x01\x00\x00\x00>\x00<\x00\x14\x00\x00\x0bsetup_table&ctag1.2f7621850ffa401bab2f183ea1803280\x00\x00\x00\x00\x00\xce', should_close=False, drain_future=None)
+2025-01-19 18:38:30,065 - connection - DEBUG - __reader: 642 - Received frame <Basic.ConsumeOk object at 0x2612beecc10> in channel #1 weight=51 on <Connection: "amqp://guest:******@localhost:5672/" at 0x2612bedcd20>
+2025-01-19 18:38:30,065 - queue - DEBUG - declare: 94 - Declaring queue: <RobustQueue(create_task): auto_delete=False, durable=False, exclusive=False, arguments={'x-queue-type': 'classic'}
+2025-01-19 18:38:30,065 - connection - DEBUG - __writer: 717 - Prepare to send ChannelFrame(payload=b'\x01\x00\x01\x00\x00\x000\x002\x00\n\x00\x00\x0bcreate_task\x00\x00\x00\x00\x19\x0cx-queue-typeS\x00\x00\x00\x07classic\xce', should_close=False, drain_future=None)
+2025-01-19 18:38:30,070 - connection - DEBUG - __reader: 642 - Received frame <Queue.DeclareOk object at 0x2612beebe30> in channel #1 weight=32 on <Connection: "amqp://guest:******@localhost:5672/" at 0x2612bedcd20>
+2025-01-19 18:38:30,070 - queue - DEBUG - consume: 229 - Start to consuming queue: <RobustQueue(create_task): auto_delete=False, durable=False, exclusive=False, arguments={'x-queue-type': 'classic'}
+2025-01-19 18:38:30,070 - connection - DEBUG - __writer: 717 - Prepare to send ChannelFrame(payload=b'\x01\x00\x01\x00\x00\x00>\x00<\x00\x14\x00\x00\x0bcreate_task&ctag1.e86908a064ff47a28e0fedc3a4ce5610\x00\x00\x00\x00\x00\xce', should_close=False, drain_future=None)
+2025-01-19 18:38:30,072 - connection - DEBUG - __reader: 642 - Received frame <Basic.ConsumeOk object at 0x2612bf08bd0> in channel #1 weight=51 on <Connection: "amqp://guest:******@localhost:5672/" at 0x2612bedcd20>
+2025-01-19 18:38:30,072 - queue - DEBUG - declare: 94 - Declaring queue: <RobustQueue(get_all_task): auto_delete=False, durable=False, exclusive=False, arguments={'x-queue-type': 'classic'}
+2025-01-19 18:38:30,073 - connection - DEBUG - __writer: 717 - Prepare to send ChannelFrame(payload=b'\x01\x00\x01\x00\x00\x001\x002\x00\n\x00\x00\x0cget_all_task\x00\x00\x00\x00\x19\x0cx-queue-typeS\x00\x00\x00\x07classic\xce', should_close=False, drain_future=None)
+2025-01-19 18:38:30,077 - connection - DEBUG - __reader: 642 - Received frame <Queue.DeclareOk object at 0x2612bf10140> in channel #1 weight=33 on <Connection: "amqp://guest:******@localhost:5672/" at 0x2612bedcd20>
+2025-01-19 18:38:30,077 - queue - DEBUG - consume: 229 - Start to consuming queue: <RobustQueue(get_all_task): auto_delete=False, durable=False, exclusive=False, arguments={'x-queue-type': 'classic'}
+2025-01-19 18:38:30,078 - connection - DEBUG - __writer: 717 - Prepare to send ChannelFrame(payload=b'\x01\x00\x01\x00\x00\x00?\x00<\x00\x14\x00\x00\x0cget_all_task&ctag1.a435e86fa1d3417ebdbeef3ee66c9b60\x00\x00\x00\x00\x00\xce', should_close=False, drain_future=None)
+2025-01-19 18:38:30,079 - connection - DEBUG - __reader: 642 - Received frame <Basic.ConsumeOk object at 0x2612beefc90> in channel #1 weight=51 on <Connection: "amqp://guest:******@localhost:5672/" at 0x2612bedcd20>
+2025-01-19 18:38:30,079 - queue - DEBUG - declare: 94 - Declaring queue: <RobustQueue(get_id_task): auto_delete=False, durable=False, exclusive=False, arguments={'x-queue-type': 'classic'}
+2025-01-19 18:38:30,080 - connection - DEBUG - __writer: 717 - Prepare to send ChannelFrame(payload=b'\x01\x00\x01\x00\x00\x000\x002\x00\n\x00\x00\x0bget_id_task\x00\x00\x00\x00\x19\x0cx-queue-typeS\x00\x00\x00\x07classic\xce', should_close=False, drain_future=None)
+2025-01-19 18:38:30,084 - connection - DEBUG - __reader: 642 - Received frame <Queue.DeclareOk object at 0x2612bf104b0> in channel #1 weight=32 on <Connection: "amqp://guest:******@localhost:5672/" at 0x2612bedcd20>
+2025-01-19 18:38:30,084 - queue - DEBUG - consume: 229 - Start to consuming queue: <RobustQueue(get_id_task): auto_delete=False, durable=False, exclusive=False, arguments={'x-queue-type': 'classic'}
+2025-01-19 18:38:30,084 - connection - DEBUG - __writer: 717 - Prepare to send ChannelFrame(payload=b'\x01\x00\x01\x00\x00\x00>\x00<\x00\x14\x00\x00\x0bget_id_task&ctag1.f6f38bbcefda430393033ed42a515bf9\x00\x00\x00\x00\x00\xce', should_close=False, drain_future=None)
+2025-01-19 18:38:30,086 - connection - DEBUG - __reader: 642 - Received frame <Basic.ConsumeOk object at 0x2612bf09250> in channel #1 weight=51 on <Connection: "amqp://guest:******@localhost:5672/" at 0x2612bedcd20>
+2025-01-19 18:38:30,086 - queue - DEBUG - declare: 94 - Declaring queue: <RobustQueue(run_task): auto_delete=False, durable=False, exclusive=False, arguments={'x-queue-type': 'classic'}
+2025-01-19 18:38:30,086 - connection - DEBUG - __writer: 717 - Prepare to send ChannelFrame(payload=b'\x01\x00\x01\x00\x00\x00-\x002\x00\n\x00\x00\x08run_task\x00\x00\x00\x00\x19\x0cx-queue-typeS\x00\x00\x00\x07classic\xce', should_close=False, drain_future=None)
+2025-01-19 18:38:30,090 - connection - DEBUG - __reader: 642 - Received frame <Queue.DeclareOk object at 0x2612bf10690> in channel #1 weight=29 on <Connection: "amqp://guest:******@localhost:5672/" at 0x2612bedcd20>
+2025-01-19 18:38:30,090 - queue - DEBUG - consume: 229 - Start to consuming queue: <RobustQueue(run_task): auto_delete=False, durable=False, exclusive=False, arguments={'x-queue-type': 'classic'}
+2025-01-19 18:38:30,090 - connection - DEBUG - __writer: 717 - Prepare to send ChannelFrame(payload=b'\x01\x00\x01\x00\x00\x00;\x00<\x00\x14\x00\x00\x08run_task&ctag1.6261582c8c4c48a691eac57c45bf0757\x00\x00\x00\x00\x00\xce', should_close=False, drain_future=None)
+2025-01-19 18:38:30,091 - connection - DEBUG - __reader: 642 - Received frame <Basic.ConsumeOk object at 0x2612bf09610> in channel #1 weight=51 on <Connection: "amqp://guest:******@localhost:5672/" at 0x2612bedcd20>
+2025-01-19 18:38:35,043 - robust_connection - DEBUG - __connection_factory: 123 - Waiting for connection close event for <RobustConnection: "amqp://guest:******@localhost:5672/" 1 channels>
+2025-01-19 18:38:58,515 - connection - DEBUG - __reader: 642 - Received frame <Basic.Deliver object at 0x2612b8a7470> in channel #1 weight=74 on <Connection: "amqp://guest:******@localhost:5672/" at 0x2612bedcd20>
+2025-01-19 18:38:58,516 - connection - DEBUG - __reader: 642 - Received frame <pamqp.header.ContentHeader object at 0x000002612BE8F770> in channel #1 weight=208 on <Connection: "amqp://guest:******@localhost:5672/" at 0x2612bedcd20>
+2025-01-19 18:38:58,636 - methods - INFO - get_all_task: 76 - Был получен список всех задач.
+2025-01-19 18:38:58,639 - exchange - DEBUG - publish: 180 - Publishing message with routing key 'amq.rabbitmq.reply-to.g1h2AA5yZXBseUA3MzgwMDE3OQAAApQAAAAAZ40ccw==.Nb0QZEfnfKuSaZubT1JJUg==' via exchange <RobustExchange(): auto_delete=False, durable=False, arguments={})>: Message:{'app_id': 'faststream-0.5.34',
+ 'body_size': 239,
+ 'cluster_id': None,
+ 'consumer_tag': None,
+ 'content_encoding': None,
+ 'content_type': 'application/json',
+ 'correlation_id': '6c7f2f56-ff8f-4ee8-a010-84c61998aebc',
+ 'delivery_mode': <DeliveryMode.NOT_PERSISTENT: 1>,
+ 'delivery_tag': None,
+ 'exchange': None,
+ 'expiration': None,
+ 'headers': {},
+ 'message_id': None,
+ 'priority': 0,
+ 'redelivered': None,
+ 'reply_to': None,
+ 'routing_key': None,
+ 'timestamp': None,
+ 'type': 'None',
+ 'user_id': None}
+2025-01-19 18:38:58,640 - connection - DEBUG - __writer: 717 - Prepare to send ChannelFrame(payload=b'\x01\x00\x01\x00\x00\x00d\x00<\x00(\x00\x00\x00[amq.rabbitmq.reply-to.g1h2AA5yZXBseUA3MzgwMDE3OQAAApQAAAAAZ40ccw==.Nb0QZEfnfKuSaZubT1JJUg==\x01\xce\x02\x00\x01\x00\x00\x00}\x00<\x00\x00\x00\x00\x00\x00\x00\x00\x00\xef\xbc\x88\x10application/json\x00\x00\x00\x00\x01\x00$6c7f2f56-ff8f-4ee8-a010-84c61998aebc a9807b62141c444aa75564e541dde90d\x11faststream-0.5.34\xce\x03\x00\x01\x00\x00\x00\xef[{"value": 3, "status": "complete", "result": 2, "id": 3}, {"value": 4, "status": "complete", "result": 3, "id": 1}, {"value": 9, "status": "complete", "result": 34, "id": 2}, {"value": 27, "status": "complete", "result": 196418, "id": 4}]\xce', should_close=False, drain_future=<Future pending cb=[FutureStore.__on_task_done.<locals>.remover() at C:\Users\danil\Desktop\Lectures\Python\FastAPI_HomeWork_Finally\Microservice_Y\myenv\Lib\site-packages\aiormq\base.py:33, <1 more>, Task.task_wakeup()]>)
+2025-01-19 18:38:58,641 - connection - DEBUG - __reader: 642 - Received frame <Basic.Return object at 0x2612bf342d0> in channel #1 weight=116 on <Connection: "amqp://guest:******@localhost:5672/" at 0x2612bedcd20>
+2025-01-19 18:38:58,641 - connection - DEBUG - __reader: 642 - Received frame <pamqp.header.ContentHeader object at 0x000002612BE5F750> in channel #1 weight=133 on <Connection: "amqp://guest:******@localhost:5672/" at 0x2612bedcd20>
+2025-01-19 18:38:58,641 - connection - DEBUG - __reader: 642 - Received frame <pamqp.body.ContentBody object at 0x000002612BE5F890> in channel #1 weight=247 on <Connection: "amqp://guest:******@localhost:5672/" at 0x2612bedcd20>
+2025-01-19 18:38:58,641 - connection - DEBUG - __reader: 642 - Received frame <Basic.Ack object at 0x2612bf31550> in channel #1 weight=21 on <Connection: "amqp://guest:******@localhost:5672/" at 0x2612bedcd20>
+2025-01-19 18:38:58,642 - connection - DEBUG - __writer: 717 - Prepare to send ChannelFrame(payload=b'\x01\x00\x01\x00\x00\x00\r\x00<\x00P\x00\x00\x00\x00\x00\x00\x00\x01\x00\xce', should_close=False, drain_future=<Future pending cb=[FutureStore.__on_task_done.<locals>.remover() at C:\Users\danil\Desktop\Lectures\Python\FastAPI_HomeWork_Finally\Microservice_Y\myenv\Lib\site-packages\aiormq\base.py:33, <1 more>, Task.task_wakeup()]>)
+2025-01-19 18:38:59,920 - connection - DEBUG - __reader: 642 - Received frame <pamqp.heartbeat.Heartbeat object at 0x000002612BE5F9D0> in channel #0 weight=8 on <Connection: "amqp://guest:******@localhost:5672/" at 0x2612bedcd20>
+2025-01-19 18:39:00,049 - connection - DEBUG - __writer: 717 - Prepare to send ChannelFrame(payload=b'\x08\x00\x00\x00\x00\x00\x00\xce', should_close=False, drain_future=None)
+2025-01-19 18:39:09,126 - connection - DEBUG - __reader: 642 - Received frame <Basic.Deliver object at 0x2612b8a7470> in channel #1 weight=73 on <Connection: "amqp://guest:******@localhost:5672/" at 0x2612bedcd20>
+2025-01-19 18:39:09,126 - connection - DEBUG - __reader: 642 - Received frame <pamqp.header.ContentHeader object at 0x000002612BEA8C30> in channel #1 weight=225 on <Connection: "amqp://guest:******@localhost:5672/" at 0x2612bedcd20>
+2025-01-19 18:39:09,126 - connection - DEBUG - __reader: 642 - Received frame <pamqp.body.ContentBody object at 0x000002612BEA90F0> in channel #1 weight=9 on <Connection: "amqp://guest:******@localhost:5672/" at 0x2612bedcd20>
+2025-01-19 18:39:09,135 - methods - INFO - get_id_task: 98 - Была найдена задача по ID.
+2025-01-19 18:39:09,137 - exchange - DEBUG - publish: 180 - Publishing message with routing key 'amq.rabbitmq.reply-to.g1h2AA5yZXBseUA3MzgwMDE3OQAAApQAAAAAZ40ccw==./5L9kyKpL1pt+2YImHq3Xg==' via exchange <RobustExchange(): auto_delete=False, durable=False, arguments={})>: Message:{'app_id': 'faststream-0.5.34',
+ 'body_size': 64,
+ 'cluster_id': None,
+ 'consumer_tag': None,
+ 'content_encoding': None,
+ 'content_type': 'application/json',
+ 'correlation_id': '6fd1bc83-9bf7-445e-9231-ee5fe8068362',
+ 'delivery_mode': <DeliveryMode.NOT_PERSISTENT: 1>,
+ 'delivery_tag': None,
+ 'exchange': None,
+ 'expiration': None,
+ 'headers': {},
+ 'message_id': None,
+ 'priority': 0,
+ 'redelivered': None,
+ 'reply_to': None,
+ 'routing_key': None,
+ 'timestamp': None,
+ 'type': 'None',
+ 'user_id': None}
+2025-01-19 18:39:09,137 - connection - DEBUG - __writer: 717 - Prepare to send ChannelFrame(payload=b'\x01\x00\x01\x00\x00\x00d\x00<\x00(\x00\x00\x00[amq.rabbitmq.reply-to.g1h2AA5yZXBseUA3MzgwMDE3OQAAApQAAAAAZ40ccw==./5L9kyKpL1pt+2YImHq3Xg==\x01\xce\x02\x00\x01\x00\x00\x00}\x00<\x00\x00\x00\x00\x00\x00\x00\x00\x00@\xbc\x88\x10application/json\x00\x00\x00\x00\x01\x00$6fd1bc83-9bf7-445e-9231-ee5fe8068362 99929d73a4cf4e3e9eb1ace198b6a740\x11faststream-0.5.34\xce\x03\x00\x01\x00\x00\x00@[{"value": 27, "status": "complete", "result": 196418, "id": 4}]\xce', should_close=False, drain_future=<Future pending cb=[FutureStore.__on_task_done.<locals>.remover() at C:\Users\danil\Desktop\Lectures\Python\FastAPI_HomeWork_Finally\Microservice_Y\myenv\Lib\site-packages\aiormq\base.py:33, <1 more>, Task.task_wakeup()]>)
+2025-01-19 18:39:09,139 - connection - DEBUG - __reader: 642 - Received frame <Basic.Return object at 0x2612bf10730> in channel #1 weight=116 on <Connection: "amqp://guest:******@localhost:5672/" at 0x2612bedcd20>
+2025-01-19 18:39:09,139 - connection - DEBUG - __reader: 642 - Received frame <pamqp.header.ContentHeader object at 0x000002612BE33AD0> in channel #1 weight=133 on <Connection: "amqp://guest:******@localhost:5672/" at 0x2612bedcd20>
+2025-01-19 18:39:09,139 - connection - DEBUG - __reader: 642 - Received frame <pamqp.body.ContentBody object at 0x000002612BF1D5B0> in channel #1 weight=72 on <Connection: "amqp://guest:******@localhost:5672/" at 0x2612bedcd20>
+2025-01-19 18:39:09,140 - connection - DEBUG - __reader: 642 - Received frame <Basic.Ack object at 0x2612bf27b90> in channel #1 weight=21 on <Connection: "amqp://guest:******@localhost:5672/" at 0x2612bedcd20>
+2025-01-19 18:39:09,140 - connection - DEBUG - __writer: 717 - Prepare to send ChannelFrame(payload=b'\x01\x00\x01\x00\x00\x00\r\x00<\x00P\x00\x00\x00\x00\x00\x00\x00\x02\x00\xce', should_close=False, drain_future=<Future pending cb=[FutureStore.__on_task_done.<locals>.remover() at C:\Users\danil\Desktop\Lectures\Python\FastAPI_HomeWork_Finally\Microservice_Y\myenv\Lib\site-packages\aiormq\base.py:33, <1 more>, Task.task_wakeup()]>)
+2025-01-19 18:39:15,635 - connection - DEBUG - __reader: 642 - Received frame <Basic.Deliver object at 0x2612b8a7470> in channel #1 weight=73 on <Connection: "amqp://guest:******@localhost:5672/" at 0x2612bedcd20>
+2025-01-19 18:39:15,635 - connection - DEBUG - __reader: 642 - Received frame <pamqp.header.ContentHeader object at 0x000002612BE22AD0> in channel #1 weight=225 on <Connection: "amqp://guest:******@localhost:5672/" at 0x2612bedcd20>
+2025-01-19 18:39:15,635 - connection - DEBUG - __reader: 642 - Received frame <pamqp.body.ContentBody object at 0x000002612BE22BE0> in channel #1 weight=9 on <Connection: "amqp://guest:******@localhost:5672/" at 0x2612bedcd20>
+2025-01-19 18:39:15,639 - methods - ERROR - get_id_task: 101 - Задача по ID не найдена.
+2025-01-19 18:39:15,641 - exchange - DEBUG - publish: 180 - Publishing message with routing key 'amq.rabbitmq.reply-to.g1h2AA5yZXBseUA3MzgwMDE3OQAAApQAAAAAZ40ccw==.Hh2SkOucQ8Zz5vSY6OmFVA==' via exchange <RobustExchange(): auto_delete=False, durable=False, arguments={})>: Message:{'app_id': 'faststream-0.5.34',
+ 'body_size': 200,
+ 'cluster_id': None,
+ 'consumer_tag': None,
+ 'content_encoding': None,
+ 'content_type': 'application/json',
+ 'correlation_id': '2e8b012b-3157-477f-8909-91c43768d47b',
+ 'delivery_mode': <DeliveryMode.NOT_PERSISTENT: 1>,
+ 'delivery_tag': None,
+ 'exchange': None,
+ 'expiration': None,
+ 'headers': {},
+ 'message_id': None,
+ 'priority': 0,
+ 'redelivered': None,
+ 'reply_to': None,
+ 'routing_key': None,
+ 'timestamp': None,
+ 'type': 'None',
+ 'user_id': None}
+2025-01-19 18:39:15,641 - connection - DEBUG - __writer: 717 - Prepare to send ChannelFrame(payload=b'\x01\x00\x01\x00\x00\x00d\x00<\x00(\x00\x00\x00[amq.rabbitmq.reply-to.g1h2AA5yZXBseUA3MzgwMDE3OQAAApQAAAAAZ40ccw==.Hh2SkOucQ8Zz5vSY6OmFVA==\x01\xce\x02\x00\x01\x00\x00\x00}\x00<\x00\x00\x00\x00\x00\x00\x00\x00\x00\xc8\xbc\x88\x10application/json\x00\x00\x00\x00\x01\x00$2e8b012b-3157-477f-8909-91c43768d47b 19fd72d9da5448e4982e680c32c23323\x11faststream-0.5.34\xce\x03\x00\x01\x00\x00\x00\xc8{"message": "\\u0417\\u0430\\u0434\\u0430\\u0447\\u0438 \\u0441 \\u0442\\u0430\\u043a\\u0438\\u043c \\u0438\\u0434\\u0435\\u043d\\u0442\\u0438\\u0444\\u0438\\u043a\\u0430\\u0442\\u043e\\u0440\\u043e\\u043c \\u043d\\u0435\\u0442."}\xce', should_close=False, drain_future=<Future pending cb=[FutureStore.__on_task_done.<locals>.remover() at C:\Users\danil\Desktop\Lectures\Python\FastAPI_HomeWork_Finally\Microservice_Y\myenv\Lib\site-packages\aiormq\base.py:33, <1 more>, Task.task_wakeup()]>)
+2025-01-19 18:39:15,642 - connection - DEBUG - __reader: 642 - Received frame <Basic.Return object at 0x2612bf358b0> in channel #1 weight=116 on <Connection: "amqp://guest:******@localhost:5672/" at 0x2612bedcd20>
+2025-01-19 18:39:15,642 - connection - DEBUG - __reader: 642 - Received frame <pamqp.header.ContentHeader object at 0x000002612BE35850> in channel #1 weight=133 on <Connection: "amqp://guest:******@localhost:5672/" at 0x2612bedcd20>
+2025-01-19 18:39:15,643 - connection - DEBUG - __reader: 642 - Received frame <pamqp.body.ContentBody object at 0x000002612BEB9C50> in channel #1 weight=208 on <Connection: "amqp://guest:******@localhost:5672/" at 0x2612bedcd20>
+2025-01-19 18:39:15,643 - connection - DEBUG - __reader: 642 - Received frame <Basic.Ack object at 0x2612bf26990> in channel #1 weight=21 on <Connection: "amqp://guest:******@localhost:5672/" at 0x2612bedcd20>
+2025-01-19 18:39:15,643 - connection - DEBUG - __writer: 717 - Prepare to send ChannelFrame(payload=b'\x01\x00\x01\x00\x00\x00\r\x00<\x00P\x00\x00\x00\x00\x00\x00\x00\x03\x00\xce', should_close=False, drain_future=<Future pending cb=[FutureStore.__on_task_done.<locals>.remover() at C:\Users\danil\Desktop\Lectures\Python\FastAPI_HomeWork_Finally\Microservice_Y\myenv\Lib\site-packages\aiormq\base.py:33, <1 more>, Task.task_wakeup()]>)
+2025-01-19 18:39:26,224 - connection - DEBUG - __reader: 642 - Received frame <Basic.Deliver object at 0x2612bec9010> in channel #1 weight=70 on <Connection: "amqp://guest:******@localhost:5672/" at 0x2612bedcd20>
+2025-01-19 18:39:26,224 - connection - DEBUG - __reader: 642 - Received frame <pamqp.header.ContentHeader object at 0x000002612BE35850> in channel #1 weight=133 on <Connection: "amqp://guest:******@localhost:5672/" at 0x2612bedcd20>
+2025-01-19 18:39:26,224 - connection - DEBUG - __reader: 642 - Received frame <pamqp.body.ContentBody object at 0x000002612BEB9C50> in channel #1 weight=9 on <Connection: "amqp://guest:******@localhost:5672/" at 0x2612bedcd20>
+2025-01-19 18:39:26,228 - methods - ERROR - run_task: 122 - Задача по ID не найдена.
+2025-01-19 18:39:26,230 - exchange - DEBUG - publish: 180 - Publishing message with routing key 'get_result' via exchange <RobustExchange(): auto_delete=False, durable=False, arguments={})>: Message:{'app_id': 'faststream-0.5.34',
+ 'body_size': 200,
+ 'cluster_id': None,
+ 'consumer_tag': None,
+ 'content_encoding': None,
+ 'content_type': 'application/json',
+ 'correlation_id': 'efbefce4-239c-4c77-97a0-f0505a721ae0',
+ 'delivery_mode': <DeliveryMode.NOT_PERSISTENT: 1>,
+ 'delivery_tag': None,
+ 'exchange': None,
+ 'expiration': None,
+ 'headers': {},
+ 'message_id': None,
+ 'priority': 0,
+ 'redelivered': None,
+ 'reply_to': None,
+ 'routing_key': None,
+ 'timestamp': None,
+ 'type': 'None',
+ 'user_id': None}
+2025-01-19 18:39:26,230 - connection - DEBUG - __writer: 717 - Prepare to send ChannelFrame(payload=b'\x01\x00\x01\x00\x00\x00\x13\x00<\x00(\x00\x00\x00\nget_result\x01\xce\x02\x00\x01\x00\x00\x00}\x00<\x00\x00\x00\x00\x00\x00\x00\x00\x00\xc8\xbc\x88\x10application/json\x00\x00\x00\x00\x01\x00$efbefce4-239c-4c77-97a0-f0505a721ae0 f61b8636fcc94a99b57a12975f983b86\x11faststream-0.5.34\xce\x03\x00\x01\x00\x00\x00\xc8{"message": "\\u0417\\u0430\\u0434\\u0430\\u0447\\u0438 \\u0441 \\u0442\\u0430\\u043a\\u0438\\u043c \\u0438\\u0434\\u0435\\u043d\\u0442\\u0438\\u0444\\u0438\\u043a\\u0430\\u0442\\u043e\\u0440\\u043e\\u043c \\u043d\\u0435\\u0442."}\xce', should_close=False, drain_future=<Future pending cb=[FutureStore.__on_task_done.<locals>.remover() at C:\Users\danil\Desktop\Lectures\Python\FastAPI_HomeWork_Finally\Microservice_Y\myenv\Lib\site-packages\aiormq\base.py:33, <1 more>, Task.task_wakeup()]>)
+2025-01-19 18:39:26,232 - connection - DEBUG - __reader: 642 - Received frame <Basic.Ack object at 0x2612bf27f50> in channel #1 weight=21 on <Connection: "amqp://guest:******@localhost:5672/" at 0x2612bedcd20>
+2025-01-19 18:39:26,233 - connection - DEBUG - __writer: 717 - Prepare to send ChannelFrame(payload=b'\x01\x00\x01\x00\x00\x00\r\x00<\x00P\x00\x00\x00\x00\x00\x00\x00\x04\x00\xce', should_close=False, drain_future=<Future pending cb=[FutureStore.__on_task_done.<locals>.remover() at C:\Users\danil\Desktop\Lectures\Python\FastAPI_HomeWork_Finally\Microservice_Y\myenv\Lib\site-packages\aiormq\base.py:33, <1 more>, Task.task_wakeup()]>)
+2025-01-19 18:39:30,062 - connection - DEBUG - __writer: 717 - Prepare to send ChannelFrame(payload=b'\x08\x00\x00\x00\x00\x00\x00\xce', should_close=False, drain_future=None)
+2025-01-19 18:39:45,757 - connection - DEBUG - __reader: 642 - Received frame <Basic.Deliver object at 0x2612bec9010> in channel #1 weight=70 on <Connection: "amqp://guest:******@localhost:5672/" at 0x2612bedcd20>
+2025-01-19 18:39:45,757 - connection - DEBUG - __reader: 642 - Received frame <pamqp.header.ContentHeader object at 0x000002612BE92210> in channel #1 weight=133 on <Connection: "amqp://guest:******@localhost:5672/" at 0x2612bedcd20>
+2025-01-19 18:39:45,758 - connection - DEBUG - __reader: 642 - Received frame <pamqp.body.ContentBody object at 0x000002612BE937A0> in channel #1 weight=9 on <Connection: "amqp://guest:******@localhost:5672/" at 0x2612bedcd20>
+2025-01-19 18:39:50,827 - methods - INFO - run_task: 119 - Задача по ID выполнена.
+2025-01-19 18:39:50,827 - exchange - DEBUG - publish: 180 - Publishing message with routing key 'get_result' via exchange <RobustExchange(): auto_delete=False, durable=False, arguments={})>: Message:{'app_id': 'faststream-0.5.34',
+ 'body_size': 62,
+ 'cluster_id': None,
+ 'consumer_tag': None,
+ 'content_encoding': None,
+ 'content_type': 'application/json',
+ 'correlation_id': '15cb3a2d-9990-441e-976c-d32c9d3644f8',
+ 'delivery_mode': <DeliveryMode.NOT_PERSISTENT: 1>,
+ 'delivery_tag': None,
+ 'exchange': None,
+ 'expiration': None,
+ 'headers': {},
+ 'message_id': None,
+ 'priority': 0,
+ 'redelivered': None,
+ 'reply_to': None,
+ 'routing_key': None,
+ 'timestamp': None,
+ 'type': 'None',
+ 'user_id': None}
+2025-01-19 18:39:50,828 - connection - DEBUG - __writer: 717 - Prepare to send ChannelFrame(payload=b'\x01\x00\x01\x00\x00\x00\x13\x00<\x00(\x00\x00\x00\nget_result\x01\xce\x02\x00\x01\x00\x00\x00}\x00<\x00\x00\x00\x00\x00\x00\x00\x00\x00>\xbc\x88\x10application/json\x00\x00\x00\x00\x01\x00$15cb3a2d-9990-441e-976c-d32c9d3644f8 e793c6a9e806467f9b7b2d3951e4a7e9\x11faststream-0.5.34\xce\x03\x00\x01\x00\x00\x00>{"value": 27, "status": "complete", "result": 196418, "id": 4}\xce', should_close=False, drain_future=<Future pending cb=[FutureStore.__on_task_done.<locals>.remover() at C:\Users\danil\Desktop\Lectures\Python\FastAPI_HomeWork_Finally\Microservice_Y\myenv\Lib\site-packages\aiormq\base.py:33, <1 more>, Task.task_wakeup()]>)
+2025-01-19 18:39:50,829 - connection - DEBUG - __reader: 642 - Received frame <Basic.Ack object at 0x2612a20d810> in channel #1 weight=21 on <Connection: "amqp://guest:******@localhost:5672/" at 0x2612bedcd20>
+2025-01-19 18:39:50,829 - connection - DEBUG - __writer: 717 - Prepare to send ChannelFrame(payload=b'\x01\x00\x01\x00\x00\x00\r\x00<\x00P\x00\x00\x00\x00\x00\x00\x00\x05\x00\xce', should_close=False, drain_future=<Future pending cb=[FutureStore.__on_task_done.<locals>.remover() at C:\Users\danil\Desktop\Lectures\Python\FastAPI_HomeWork_Finally\Microservice_Y\myenv\Lib\site-packages\aiormq\base.py:33, <1 more>, Task.task_wakeup()]>)
+2025-01-19 18:40:00,075 - connection - DEBUG - __writer: 717 - Prepare to send ChannelFrame(payload=b'\x08\x00\x00\x00\x00\x00\x00\xce', should_close=False, drain_future=None)
+2025-01-19 18:40:00,075 - connection - DEBUG - __writer: 717 - Prepare to send ChannelFrame(payload=b'\x01\x00\x01\x00\x00\x00,\x00<\x00\x1e&ctag1.2f7621850ffa401bab2f183ea1803280\x00\xce', should_close=False, drain_future=None)
+2025-01-19 18:40:00,076 - connection - DEBUG - __reader: 642 - Received frame <Basic.CancelOk object at 0x2612bceed90> in channel #1 weight=51 on <Connection: "amqp://guest:******@localhost:5672/" at 0x2612bedcd20>
+2025-01-19 18:40:00,076 - connection - DEBUG - __writer: 717 - Prepare to send ChannelFrame(payload=b'\x01\x00\x01\x00\x00\x00,\x00<\x00\x1e&ctag1.e86908a064ff47a28e0fedc3a4ce5610\x00\xce', should_close=False, drain_future=None)
+2025-01-19 18:40:00,077 - connection - DEBUG - __reader: 642 - Received frame <Basic.CancelOk object at 0x2612a0b8950> in channel #1 weight=51 on <Connection: "amqp://guest:******@localhost:5672/" at 0x2612bedcd20>
+2025-01-19 18:40:00,078 - connection - DEBUG - __writer: 717 - Prepare to send ChannelFrame(payload=b'\x01\x00\x01\x00\x00\x00,\x00<\x00\x1e&ctag1.a435e86fa1d3417ebdbeef3ee66c9b60\x00\xce', should_close=False, drain_future=None)
+2025-01-19 18:40:00,079 - connection - DEBUG - __reader: 642 - Received frame <Basic.CancelOk object at 0x2612a20d810> in channel #1 weight=51 on <Connection: "amqp://guest:******@localhost:5672/" at 0x2612bedcd20>
+2025-01-19 18:40:00,079 - connection - DEBUG - __writer: 717 - Prepare to send ChannelFrame(payload=b'\x01\x00\x01\x00\x00\x00,\x00<\x00\x1e&ctag1.f6f38bbcefda430393033ed42a515bf9\x00\xce', should_close=False, drain_future=None)
+2025-01-19 18:40:00,080 - connection - DEBUG - __reader: 642 - Received frame <Basic.CancelOk object at 0x2612b71ccd0> in channel #1 weight=51 on <Connection: "amqp://guest:******@localhost:5672/" at 0x2612bedcd20>
+2025-01-19 18:40:00,080 - connection - DEBUG - __writer: 717 - Prepare to send ChannelFrame(payload=b'\x01\x00\x01\x00\x00\x00,\x00<\x00\x1e&ctag1.6261582c8c4c48a691eac57c45bf0757\x00\xce', should_close=False, drain_future=None)
+2025-01-19 18:40:00,082 - connection - DEBUG - __reader: 642 - Received frame <Basic.CancelOk object at 0x2612a0b8950> in channel #1 weight=51 on <Connection: "amqp://guest:******@localhost:5672/" at 0x2612bedcd20>
+2025-01-19 18:40:00,082 - channel - DEBUG - close: 128 - Closing channel <aio_pika.robust_channel.RobustChannel object at 0x000002612BE8D940>
+2025-01-19 18:40:00,082 - connection - DEBUG - __writer: 717 - Prepare to send ChannelFrame(payload=b'\x01\x00\x01\x00\x00\x00\x0b\x00\x14\x00(\x00\xc8\x00\x00\x00\x00\x00\xce', should_close=False, drain_future=None)
+2025-01-19 18:40:00,083 - connection - DEBUG - __reader: 642 - Received frame <Channel.CloseOk object at 0x2612bf181a0> in channel #1 weight=12 on <Connection: "amqp://guest:******@localhost:5672/" at 0x2612bedcd20>
+2025-01-19 18:40:00,084 - connection - DEBUG - _on_close: 785 - Closing connection <Connection: "amqp://guest:******@localhost:5672/" at 0x2612bedcd20> cause: <class 'asyncio.exceptions.CancelledError'>
+2025-01-19 18:40:00,085 - connection - DEBUG - __writer: 742 - Sending <Connection.Close object at 0x2612bedcc80> to <Connection: "amqp://guest:******@localhost:5672/" at 0x2612bedcd20>
+2025-01-19 18:40:00,085 - connection - DEBUG - __close_writer: 761 - Writer on connection amqp://guest:******@localhost:5672/ closed
+2025-01-19 18:40:00,085 - connection - DEBUG - _on_reader_done: 538 - Reader exited for <Connection: "amqp://guest:******@localhost:5672/" at 0x2612bedcd20>
+2025-01-19 18:40:00,085 - connection - DEBUG - __writer: 753 - Writer exited for <Connection: "amqp://guest:******@localhost:5672/" at 0x2612bedcd20>
+2025-01-19 18:40:00,086 - connection - DEBUG - _on_close: 785 - Closing connection <Connection: "amqp://guest:******@localhost:5672/" at 0x2612bedcd20> cause: CancelledError()
