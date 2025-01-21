@@ -2,3 +2,4 @@ faststream
 faststream[cli]
 sqlalchemy
 aio_pika
+asyncpg

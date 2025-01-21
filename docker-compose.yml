@@ -1,0 +1,54 @@
+version: '3.8'
+
+services:
+  rabbitmq:
+    image: rabbitmq:management-alpine
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    environment:
+      RABBITMQ_DEFAULT_USER: myuser
+      RABBITMQ_DEFAULT_PASS: mypassword
+    healthcheck:
+      test: ["CMD", "rabbitmq-diagnostics", "status"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+
+  faststream:
+    build:
+      context: Microservice_Y
+      dockerfile: Dockerfile
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+    environment:
+      RABBITMQ_URL: amqp://myuser:mypassword@rabbitmq:5672/
+      DATABASE_URL: postgresql+asyncpg://danil:abobus@postgres/danil
+
+  fastapi:
+    build:
+      context: Microservice_X
+      dockerfile: Dockerfile
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+    environment:
+      RABBITMQ_URL: amqp://myuser:mypassword@rabbitmq:5672/
+    ports:
+      - "8000:8000"
+
+  postgres:
+    image: postgres:latest
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: "danil"
+      POSTGRES_USER: "danil"
+      POSTGRES_PASSWORD: "abobus"
+      DATABASE_URL: postgresql+asyncpg://danil:abobus@postgres/danil
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U danil"]
+      interval: 30s
+      timeout: 10s
+      retries: 5

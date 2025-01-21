@@ -5,8 +5,11 @@ from faststream.rabbit import RabbitBroker
 from Models.model import TaskSchema
 from sqlalchemy import select
 import logging
+import os
 
-broker = RabbitBroker("amqp://guest:guest@localhost:5672/")
+# Получаем URL из переменной окружения
+rabbitmq_url = os.getenv("RABBITMQ_URL")
+broker = RabbitBroker(rabbitmq_url)
 logging.basicConfig(
     level = logging.DEBUG,
     filename= "log.log",

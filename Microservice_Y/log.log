@@ -223,3 +223,160 @@
 2025-01-20 12:19:18,833 - robust_connection - DEBUG - __connection_factory: 134 - Connection attempt for <RobustConnection: "amqp://guest:******@localhost:5672/" 0 channels>
 2025-01-20 12:19:18,833 - connection - DEBUG - connect: 455 - Connecting to: amqp://guest:******@localhost:5672/
 2025-01-20 12:19:22,932 - robust_connection - INFO - _on_connection_close: 83 - Connection to amqp://guest:******@localhost:5672/ closed. Reconnecting after 5 seconds.
+2025-01-20 20:58:13,911 - proactor_events - DEBUG - __init__: 631 - Using proactor: IocpProactor
+2025-01-20 20:58:13,920 - robust_connection - DEBUG - __connection_factory: 121 - Starting connection factory for <RobustConnection: "amqp://guest:******@rabbitmq:5672/" 0 channels>
+2025-01-20 20:58:13,920 - robust_connection - DEBUG - __connection_factory: 123 - Waiting for connection close event for <RobustConnection: "amqp://guest:******@rabbitmq:5672/" 0 channels>
+2025-01-20 20:58:13,920 - robust_connection - DEBUG - __connection_factory: 134 - Connection attempt for <RobustConnection: "amqp://guest:******@rabbitmq:5672/" 0 channels>
+2025-01-20 20:58:13,921 - connection - DEBUG - connect: 455 - Connecting to: amqp://guest:******@rabbitmq:5672/
+2025-01-20 20:58:16,206 - robust_connection - INFO - _on_connection_close: 83 - Connection to amqp://guest:******@rabbitmq:5672/ closed. Reconnecting after 5 seconds.
+2025-01-20 20:58:24,487 - proactor_events - DEBUG - __init__: 631 - Using proactor: IocpProactor
+2025-01-20 20:58:24,494 - robust_connection - DEBUG - __connection_factory: 121 - Starting connection factory for <RobustConnection: "amqp://guest:******@rabbitmq:5672/" 0 channels>
+2025-01-20 20:58:24,494 - robust_connection - DEBUG - __connection_factory: 123 - Waiting for connection close event for <RobustConnection: "amqp://guest:******@rabbitmq:5672/" 0 channels>
+2025-01-20 20:58:24,494 - robust_connection - DEBUG - __connection_factory: 134 - Connection attempt for <RobustConnection: "amqp://guest:******@rabbitmq:5672/" 0 channels>
+2025-01-20 20:58:24,494 - connection - DEBUG - connect: 455 - Connecting to: amqp://guest:******@rabbitmq:5672/
+2025-01-20 20:58:26,783 - robust_connection - INFO - _on_connection_close: 83 - Connection to amqp://guest:******@rabbitmq:5672/ closed. Reconnecting after 5 seconds.
+2025-01-20 20:58:55,102 - proactor_events - DEBUG - __init__: 631 - Using proactor: IocpProactor
+2025-01-20 20:58:55,108 - robust_connection - DEBUG - __connection_factory: 121 - Starting connection factory for <RobustConnection: "amqp://guest:******@rabbitmq:5672/" 0 channels>
+2025-01-20 20:58:55,108 - robust_connection - DEBUG - __connection_factory: 123 - Waiting for connection close event for <RobustConnection: "amqp://guest:******@rabbitmq:5672/" 0 channels>
+2025-01-20 20:58:55,108 - robust_connection - DEBUG - __connection_factory: 134 - Connection attempt for <RobustConnection: "amqp://guest:******@rabbitmq:5672/" 0 channels>
+2025-01-20 20:58:55,109 - connection - DEBUG - connect: 455 - Connecting to: amqp://guest:******@rabbitmq:5672/
+2025-01-20 20:58:57,401 - robust_connection - INFO - _on_connection_close: 83 - Connection to amqp://guest:******@rabbitmq:5672/ closed. Reconnecting after 5 seconds.
+2025-01-20 20:59:14,587 - proactor_events - DEBUG - __init__: 631 - Using proactor: IocpProactor
+2025-01-20 20:59:14,594 - robust_connection - DEBUG - __connection_factory: 121 - Starting connection factory for <RobustConnection: "amqp://guest:******@rabbitmq:5672/" 0 channels>
+2025-01-20 20:59:14,594 - robust_connection - DEBUG - __connection_factory: 123 - Waiting for connection close event for <RobustConnection: "amqp://guest:******@rabbitmq:5672/" 0 channels>
+2025-01-20 20:59:14,594 - robust_connection - DEBUG - __connection_factory: 134 - Connection attempt for <RobustConnection: "amqp://guest:******@rabbitmq:5672/" 0 channels>
+2025-01-20 20:59:14,594 - connection - DEBUG - connect: 455 - Connecting to: amqp://guest:******@rabbitmq:5672/
+2025-01-20 20:59:16,883 - robust_connection - INFO - _on_connection_close: 83 - Connection to amqp://guest:******@rabbitmq:5672/ closed. Reconnecting after 5 seconds.
+2025-01-20 21:00:39,354 - proactor_events - DEBUG - __init__: 631 - Using proactor: IocpProactor
+2025-01-20 21:00:39,361 - robust_connection - DEBUG - __connection_factory: 121 - Starting connection factory for <RobustConnection: "amqp://guest:******@rabbitmq:5672/" 0 channels>
+2025-01-20 21:00:39,361 - robust_connection - DEBUG - __connection_factory: 123 - Waiting for connection close event for <RobustConnection: "amqp://guest:******@rabbitmq:5672/" 0 channels>
+2025-01-20 21:00:39,361 - robust_connection - DEBUG - __connection_factory: 134 - Connection attempt for <RobustConnection: "amqp://guest:******@rabbitmq:5672/" 0 channels>
+2025-01-20 21:00:39,361 - connection - DEBUG - connect: 455 - Connecting to: amqp://guest:******@rabbitmq:5672/
+2025-01-20 21:00:41,638 - robust_connection - INFO - _on_connection_close: 83 - Connection to amqp://guest:******@rabbitmq:5672/ closed. Reconnecting after 5 seconds.
+2025-01-20 21:01:32,902 - proactor_events - DEBUG - __init__: 631 - Using proactor: IocpProactor
+2025-01-20 21:01:32,909 - robust_connection - DEBUG - __connection_factory: 121 - Starting connection factory for <RobustConnection: "amqp://guest:******@rabbitmq:5672/" 0 channels>
+2025-01-20 21:01:32,909 - robust_connection - DEBUG - __connection_factory: 123 - Waiting for connection close event for <RobustConnection: "amqp://guest:******@rabbitmq:5672/" 0 channels>
+2025-01-20 21:01:32,909 - robust_connection - DEBUG - __connection_factory: 134 - Connection attempt for <RobustConnection: "amqp://guest:******@rabbitmq:5672/" 0 channels>
+2025-01-20 21:01:32,909 - connection - DEBUG - connect: 455 - Connecting to: amqp://guest:******@rabbitmq:5672/
+2025-01-20 21:01:35,177 - robust_connection - INFO - _on_connection_close: 83 - Connection to amqp://guest:******@rabbitmq:5672/ closed. Reconnecting after 5 seconds.
+2025-01-20 21:02:35,040 - proactor_events - DEBUG - __init__: 631 - Using proactor: IocpProactor
+2025-01-20 21:02:35,047 - robust_connection - DEBUG - __connection_factory: 121 - Starting connection factory for <RobustConnection: "amqp://guest:******@rabbitmq:5672/" 0 channels>
+2025-01-20 21:02:35,047 - robust_connection - DEBUG - __connection_factory: 123 - Waiting for connection close event for <RobustConnection: "amqp://guest:******@rabbitmq:5672/" 0 channels>
+2025-01-20 21:02:35,047 - robust_connection - DEBUG - __connection_factory: 134 - Connection attempt for <RobustConnection: "amqp://guest:******@rabbitmq:5672/" 0 channels>
+2025-01-20 21:02:35,047 - connection - DEBUG - connect: 455 - Connecting to: amqp://guest:******@rabbitmq:5672/
+2025-01-20 21:02:37,316 - robust_connection - INFO - _on_connection_close: 83 - Connection to amqp://guest:******@rabbitmq:5672/ closed. Reconnecting after 5 seconds.
+2025-01-20 21:04:09,852 - proactor_events - DEBUG - __init__: 631 - Using proactor: IocpProactor
+2025-01-20 21:04:09,854 - robust_connection - DEBUG - __connection_factory: 121 - Starting connection factory for <RobustConnection: "amqp://guest:******@rabbitmq:5672/" 0 channels>
+2025-01-20 21:04:09,854 - robust_connection - DEBUG - __connection_factory: 123 - Waiting for connection close event for <RobustConnection: "amqp://guest:******@rabbitmq:5672/" 0 channels>
+2025-01-20 21:04:09,854 - robust_connection - DEBUG - __connection_factory: 134 - Connection attempt for <RobustConnection: "amqp://guest:******@rabbitmq:5672/" 0 channels>
+2025-01-20 21:04:09,854 - connection - DEBUG - connect: 455 - Connecting to: amqp://guest:******@rabbitmq:5672/
+2025-01-20 21:04:12,141 - robust_connection - INFO - _on_connection_close: 83 - Connection to amqp://guest:******@rabbitmq:5672/ closed. Reconnecting after 5 seconds.
+2025-01-20 21:05:07,916 - proactor_events - DEBUG - __init__: 631 - Using proactor: IocpProactor
+2025-01-20 21:05:07,925 - robust_connection - DEBUG - __connection_factory: 121 - Starting connection factory for <RobustConnection: "amqp://guest:******@rabbitmq:5672/" 0 channels>
+2025-01-20 21:05:07,925 - robust_connection - DEBUG - __connection_factory: 123 - Waiting for connection close event for <RobustConnection: "amqp://guest:******@rabbitmq:5672/" 0 channels>
+2025-01-20 21:05:07,925 - robust_connection - DEBUG - __connection_factory: 134 - Connection attempt for <RobustConnection: "amqp://guest:******@rabbitmq:5672/" 0 channels>
+2025-01-20 21:05:07,926 - connection - DEBUG - connect: 455 - Connecting to: amqp://guest:******@rabbitmq:5672/
+2025-01-20 21:05:10,204 - robust_connection - INFO - _on_connection_close: 83 - Connection to amqp://guest:******@rabbitmq:5672/ closed. Reconnecting after 5 seconds.
+2025-01-20 21:05:23,923 - proactor_events - DEBUG - __init__: 631 - Using proactor: IocpProactor
+2025-01-20 21:05:23,930 - robust_connection - DEBUG - __connection_factory: 121 - Starting connection factory for <RobustConnection: "amqp://guest:******@rabbitmq:5672/" 0 channels>
+2025-01-20 21:05:23,930 - robust_connection - DEBUG - __connection_factory: 123 - Waiting for connection close event for <RobustConnection: "amqp://guest:******@rabbitmq:5672/" 0 channels>
+2025-01-20 21:05:23,930 - robust_connection - DEBUG - __connection_factory: 134 - Connection attempt for <RobustConnection: "amqp://guest:******@rabbitmq:5672/" 0 channels>
+2025-01-20 21:05:23,930 - connection - DEBUG - connect: 455 - Connecting to: amqp://guest:******@rabbitmq:5672/
+2025-01-20 21:05:26,221 - robust_connection - INFO - _on_connection_close: 83 - Connection to amqp://guest:******@rabbitmq:5672/ closed. Reconnecting after 5 seconds.
+2025-01-20 21:06:12,117 - proactor_events - DEBUG - __init__: 631 - Using proactor: IocpProactor
+2025-01-20 21:06:12,124 - robust_connection - DEBUG - __connection_factory: 121 - Starting connection factory for <RobustConnection: "amqp://guest:******@rabbitmq:5672/" 0 channels>
+2025-01-20 21:06:12,124 - robust_connection - DEBUG - __connection_factory: 123 - Waiting for connection close event for <RobustConnection: "amqp://guest:******@rabbitmq:5672/" 0 channels>
+2025-01-20 21:06:12,124 - robust_connection - DEBUG - __connection_factory: 134 - Connection attempt for <RobustConnection: "amqp://guest:******@rabbitmq:5672/" 0 channels>
+2025-01-20 21:06:12,124 - connection - DEBUG - connect: 455 - Connecting to: amqp://guest:******@rabbitmq:5672/
+2025-01-20 21:06:14,423 - robust_connection - INFO - _on_connection_close: 83 - Connection to amqp://guest:******@rabbitmq:5672/ closed. Reconnecting after 5 seconds.
+2025-01-20 21:06:43,804 - proactor_events - DEBUG - __init__: 631 - Using proactor: IocpProactor
+2025-01-20 21:06:43,813 - robust_connection - DEBUG - __connection_factory: 121 - Starting connection factory for <RobustConnection: "amqp://guest:******@rabbitmq:5672/" 0 channels>
+2025-01-20 21:06:43,813 - robust_connection - DEBUG - __connection_factory: 123 - Waiting for connection close event for <RobustConnection: "amqp://guest:******@rabbitmq:5672/" 0 channels>
+2025-01-20 21:06:43,813 - robust_connection - DEBUG - __connection_factory: 134 - Connection attempt for <RobustConnection: "amqp://guest:******@rabbitmq:5672/" 0 channels>
+2025-01-20 21:06:43,814 - connection - DEBUG - connect: 455 - Connecting to: amqp://guest:******@rabbitmq:5672/
+2025-01-20 21:06:46,085 - robust_connection - INFO - _on_connection_close: 83 - Connection to amqp://guest:******@rabbitmq:5672/ closed. Reconnecting after 5 seconds.
+2025-01-20 21:07:54,353 - proactor_events - DEBUG - __init__: 631 - Using proactor: IocpProactor
+2025-01-20 21:07:54,360 - robust_connection - DEBUG - __connection_factory: 121 - Starting connection factory for <RobustConnection: "amqp://guest:******@rabbitmq:5672/" 0 channels>
+2025-01-20 21:07:54,360 - robust_connection - DEBUG - __connection_factory: 123 - Waiting for connection close event for <RobustConnection: "amqp://guest:******@rabbitmq:5672/" 0 channels>
+2025-01-20 21:07:54,360 - robust_connection - DEBUG - __connection_factory: 134 - Connection attempt for <RobustConnection: "amqp://guest:******@rabbitmq:5672/" 0 channels>
+2025-01-20 21:07:54,361 - connection - DEBUG - connect: 455 - Connecting to: amqp://guest:******@rabbitmq:5672/
+2025-01-20 21:07:56,638 - robust_connection - INFO - _on_connection_close: 83 - Connection to amqp://guest:******@rabbitmq:5672/ closed. Reconnecting after 5 seconds.
+2025-01-20 21:08:03,807 - proactor_events - DEBUG - __init__: 631 - Using proactor: IocpProactor
+2025-01-20 21:08:03,814 - robust_connection - DEBUG - __connection_factory: 121 - Starting connection factory for <RobustConnection: "amqp://guest:******@rabbitmq:5672/" 0 channels>
+2025-01-20 21:08:03,814 - robust_connection - DEBUG - __connection_factory: 123 - Waiting for connection close event for <RobustConnection: "amqp://guest:******@rabbitmq:5672/" 0 channels>
+2025-01-20 21:08:03,814 - robust_connection - DEBUG - __connection_factory: 134 - Connection attempt for <RobustConnection: "amqp://guest:******@rabbitmq:5672/" 0 channels>
+2025-01-20 21:08:03,814 - connection - DEBUG - connect: 455 - Connecting to: amqp://guest:******@rabbitmq:5672/
+2025-01-20 21:08:06,090 - robust_connection - INFO - _on_connection_close: 83 - Connection to amqp://guest:******@rabbitmq:5672/ closed. Reconnecting after 5 seconds.
+2025-01-20 21:10:29,928 - proactor_events - DEBUG - __init__: 631 - Using proactor: IocpProactor
+2025-01-20 21:10:29,961 - robust_connection - DEBUG - __connection_factory: 121 - Starting connection factory for <RobustConnection: "amqp://guest:******@rabbitmq:5672/" 0 channels>
+2025-01-20 21:10:29,961 - robust_connection - DEBUG - __connection_factory: 123 - Waiting for connection close event for <RobustConnection: "amqp://guest:******@rabbitmq:5672/" 0 channels>
+2025-01-20 21:10:29,961 - robust_connection - DEBUG - __connection_factory: 134 - Connection attempt for <RobustConnection: "amqp://guest:******@rabbitmq:5672/" 0 channels>
+2025-01-20 21:10:29,961 - connection - DEBUG - connect: 455 - Connecting to: amqp://guest:******@rabbitmq:5672/
+2025-01-20 21:10:32,246 - robust_connection - INFO - _on_connection_close: 83 - Connection to amqp://guest:******@rabbitmq:5672/ closed. Reconnecting after 5 seconds.
+2025-01-20 21:12:33,879 - proactor_events - DEBUG - __init__: 631 - Using proactor: IocpProactor
+2025-01-20 21:12:33,886 - robust_connection - DEBUG - __connection_factory: 121 - Starting connection factory for <RobustConnection: "amqp://guest:******@localhost:5672/" 0 channels>
+2025-01-20 21:12:33,886 - robust_connection - DEBUG - __connection_factory: 123 - Waiting for connection close event for <RobustConnection: "amqp://guest:******@localhost:5672/" 0 channels>
+2025-01-20 21:12:33,886 - robust_connection - DEBUG - __connection_factory: 134 - Connection attempt for <RobustConnection: "amqp://guest:******@localhost:5672/" 0 channels>
+2025-01-20 21:12:33,886 - connection - DEBUG - connect: 455 - Connecting to: amqp://guest:******@localhost:5672/
+2025-01-20 21:12:33,947 - robust_connection - DEBUG - __connection_factory: 140 - Connection made on <RobustConnection: "amqp://guest:******@localhost:5672/" 0 channels>
+2025-01-20 21:12:33,947 - connection - DEBUG - channel: 193 - Creating AMQP channel for connection: <RobustConnection: "amqp://guest:******@localhost:5672/" 0 channels>
+2025-01-20 21:12:33,947 - connection - DEBUG - channel: 202 - Channel created: <aio_pika.robust_channel.RobustChannel object at 0x0000023EF381D940>
+2025-01-20 21:12:33,948 - connection - DEBUG - __writer: 717 - Prepare to send ChannelFrame(payload=b'\x01\x00\x01\x00\x00\x00\x06\x00\x14\x00\n\x010\xce', should_close=False, drain_future=None)
+2025-01-20 21:12:33,949 - connection - DEBUG - __reader: 642 - Received frame <Channel.OpenOk object at 0x23ef386fc10> in channel #1 weight=16 on <Connection: "amqp://guest:******@localhost:5672/" at 0x23ef38692c0>
+2025-01-20 21:12:33,950 - connection - DEBUG - __writer: 717 - Prepare to send ChannelFrame(payload=b'\x01\x00\x01\x00\x00\x00\x05\x00U\x00\n\x00\xce', should_close=False, drain_future=None)
+2025-01-20 21:12:33,951 - connection - DEBUG - __reader: 642 - Received frame <Confirm.SelectOk object at 0x23ef381e900> in channel #1 weight=12 on <Connection: "amqp://guest:******@localhost:5672/" at 0x23ef38692c0>
+2025-01-20 21:12:33,951 - connection - DEBUG - __writer: 717 - Prepare to send ChannelFrame(payload=b'\x01\x00\x01\x00\x00\x00\x0b\x00<\x00\n\x00\x00\x00\x00\x00\x00\x00\xce', should_close=False, drain_future=None)
+2025-01-20 21:12:33,953 - connection - DEBUG - __reader: 642 - Received frame <Basic.QosOk object at 0x23ef381ea50> in channel #1 weight=12 on <Connection: "amqp://guest:******@localhost:5672/" at 0x23ef38692c0>
+2025-01-20 21:12:33,953 - queue - DEBUG - declare: 94 - Declaring queue: <RobustQueue(amq.rabbitmq.reply-to): auto_delete=False, durable=False, exclusive=False, arguments={'x-queue-type': 'classic'}
+2025-01-20 21:12:33,953 - connection - DEBUG - __writer: 717 - Prepare to send ChannelFrame(payload=b'\x01\x00\x01\x00\x00\x00:\x002\x00\n\x00\x00\x15amq.rabbitmq.reply-to\x01\x00\x00\x00\x19\x0cx-queue-typeS\x00\x00\x00\x07classic\xce', should_close=False, drain_future=None)
+2025-01-20 21:12:33,954 - connection - DEBUG - __reader: 642 - Received frame <Queue.DeclareOk object at 0x23ef387e300> in channel #1 weight=42 on <Connection: "amqp://guest:******@localhost:5672/" at 0x23ef38692c0>
+2025-01-20 21:12:33,962 - queue - DEBUG - declare: 94 - Declaring queue: <RobustQueue(setup_table): auto_delete=False, durable=False, exclusive=False, arguments={'x-queue-type': 'classic'}
+2025-01-20 21:12:33,962 - connection - DEBUG - __writer: 717 - Prepare to send ChannelFrame(payload=b'\x01\x00\x01\x00\x00\x000\x002\x00\n\x00\x00\x0bsetup_table\x00\x00\x00\x00\x19\x0cx-queue-typeS\x00\x00\x00\x07classic\xce', should_close=False, drain_future=None)
+2025-01-20 21:12:33,967 - connection - DEBUG - __reader: 642 - Received frame <Queue.DeclareOk object at 0x23ef387ff20> in channel #1 weight=32 on <Connection: "amqp://guest:******@localhost:5672/" at 0x23ef38692c0>
+2025-01-20 21:12:33,967 - queue - DEBUG - consume: 229 - Start to consuming queue: <RobustQueue(setup_table): auto_delete=False, durable=False, exclusive=False, arguments={'x-queue-type': 'classic'}
+2025-01-20 21:12:33,967 - connection - DEBUG - __writer: 717 - Prepare to send ChannelFrame(payload=b'\x01\x00\x01\x00\x00\x00>\x00<\x00\x14\x00\x00\x0bsetup_table&ctag1.dcdfedda94a54a89bb141baf7410a953\x00\x00\x00\x00\x00\xce', should_close=False, drain_future=None)
+2025-01-20 21:12:33,969 - connection - DEBUG - __reader: 642 - Received frame <Basic.ConsumeOk object at 0x23ef388fcd0> in channel #1 weight=51 on <Connection: "amqp://guest:******@localhost:5672/" at 0x23ef38692c0>
+2025-01-20 21:12:33,969 - queue - DEBUG - declare: 94 - Declaring queue: <RobustQueue(create_task): auto_delete=False, durable=False, exclusive=False, arguments={'x-queue-type': 'classic'}
+2025-01-20 21:12:33,969 - connection - DEBUG - __writer: 717 - Prepare to send ChannelFrame(payload=b'\x01\x00\x01\x00\x00\x000\x002\x00\n\x00\x00\x0bcreate_task\x00\x00\x00\x00\x19\x0cx-queue-typeS\x00\x00\x00\x07classic\xce', should_close=False, drain_future=None)
+2025-01-20 21:12:33,972 - connection - DEBUG - __reader: 642 - Received frame <Queue.DeclareOk object at 0x23ef38a0370> in channel #1 weight=32 on <Connection: "amqp://guest:******@localhost:5672/" at 0x23ef38692c0>
+2025-01-20 21:12:33,972 - queue - DEBUG - consume: 229 - Start to consuming queue: <RobustQueue(create_task): auto_delete=False, durable=False, exclusive=False, arguments={'x-queue-type': 'classic'}
+2025-01-20 21:12:33,973 - connection - DEBUG - __writer: 717 - Prepare to send ChannelFrame(payload=b'\x01\x00\x01\x00\x00\x00>\x00<\x00\x14\x00\x00\x0bcreate_task&ctag1.f6d38dda074a4c1e8f259ccd367d0dac\x00\x00\x00\x00\x00\xce', should_close=False, drain_future=None)
+2025-01-20 21:12:33,974 - connection - DEBUG - __reader: 642 - Received frame <Basic.ConsumeOk object at 0x23ef3899490> in channel #1 weight=51 on <Connection: "amqp://guest:******@localhost:5672/" at 0x23ef38692c0>
+2025-01-20 21:12:33,974 - queue - DEBUG - declare: 94 - Declaring queue: <RobustQueue(get_all_task): auto_delete=False, durable=False, exclusive=False, arguments={'x-queue-type': 'classic'}
+2025-01-20 21:12:33,974 - connection - DEBUG - __writer: 717 - Prepare to send ChannelFrame(payload=b'\x01\x00\x01\x00\x00\x001\x002\x00\n\x00\x00\x0cget_all_task\x00\x00\x00\x00\x19\x0cx-queue-typeS\x00\x00\x00\x07classic\xce', should_close=False, drain_future=None)
+2025-01-20 21:12:33,977 - connection - DEBUG - __reader: 642 - Received frame <Queue.DeclareOk object at 0x23ef38a0690> in channel #1 weight=33 on <Connection: "amqp://guest:******@localhost:5672/" at 0x23ef38692c0>
+2025-01-20 21:12:33,977 - queue - DEBUG - consume: 229 - Start to consuming queue: <RobustQueue(get_all_task): auto_delete=False, durable=False, exclusive=False, arguments={'x-queue-type': 'classic'}
+2025-01-20 21:12:33,977 - connection - DEBUG - __writer: 717 - Prepare to send ChannelFrame(payload=b'\x01\x00\x01\x00\x00\x00?\x00<\x00\x14\x00\x00\x0cget_all_task&ctag1.aaf05fe28890456da5d8774a1511c54b\x00\x00\x00\x00\x00\xce', should_close=False, drain_future=None)
+2025-01-20 21:12:33,978 - connection - DEBUG - __reader: 642 - Received frame <Basic.ConsumeOk object at 0x23ef38997d0> in channel #1 weight=51 on <Connection: "amqp://guest:******@localhost:5672/" at 0x23ef38692c0>
+2025-01-20 21:12:33,978 - queue - DEBUG - declare: 94 - Declaring queue: <RobustQueue(get_id_task): auto_delete=False, durable=False, exclusive=False, arguments={'x-queue-type': 'classic'}
+2025-01-20 21:12:33,978 - connection - DEBUG - __writer: 717 - Prepare to send ChannelFrame(payload=b'\x01\x00\x01\x00\x00\x000\x002\x00\n\x00\x00\x0bget_id_task\x00\x00\x00\x00\x19\x0cx-queue-typeS\x00\x00\x00\x07classic\xce', should_close=False, drain_future=None)
+2025-01-20 21:12:33,981 - connection - DEBUG - __reader: 642 - Received frame <Queue.DeclareOk object at 0x23ef38a09b0> in channel #1 weight=32 on <Connection: "amqp://guest:******@localhost:5672/" at 0x23ef38692c0>
+2025-01-20 21:12:33,981 - queue - DEBUG - consume: 229 - Start to consuming queue: <RobustQueue(get_id_task): auto_delete=False, durable=False, exclusive=False, arguments={'x-queue-type': 'classic'}
+2025-01-20 21:12:33,981 - connection - DEBUG - __writer: 717 - Prepare to send ChannelFrame(payload=b'\x01\x00\x01\x00\x00\x00>\x00<\x00\x14\x00\x00\x0bget_id_task&ctag1.be7979f402b941fc958d675d5aeec860\x00\x00\x00\x00\x00\xce', should_close=False, drain_future=None)
+2025-01-20 21:12:33,982 - connection - DEBUG - __reader: 642 - Received frame <Basic.ConsumeOk object at 0x23ef3899b50> in channel #1 weight=51 on <Connection: "amqp://guest:******@localhost:5672/" at 0x23ef38692c0>
+2025-01-20 21:12:33,982 - queue - DEBUG - declare: 94 - Declaring queue: <RobustQueue(run_task): auto_delete=False, durable=False, exclusive=False, arguments={'x-queue-type': 'classic'}
+2025-01-20 21:12:33,982 - connection - DEBUG - __writer: 717 - Prepare to send ChannelFrame(payload=b'\x01\x00\x01\x00\x00\x00-\x002\x00\n\x00\x00\x08run_task\x00\x00\x00\x00\x19\x0cx-queue-typeS\x00\x00\x00\x07classic\xce', should_close=False, drain_future=None)
+2025-01-20 21:12:33,985 - connection - DEBUG - __reader: 642 - Received frame <Queue.DeclareOk object at 0x23ef38a0b90> in channel #1 weight=29 on <Connection: "amqp://guest:******@localhost:5672/" at 0x23ef38692c0>
+2025-01-20 21:12:33,985 - queue - DEBUG - consume: 229 - Start to consuming queue: <RobustQueue(run_task): auto_delete=False, durable=False, exclusive=False, arguments={'x-queue-type': 'classic'}
+2025-01-20 21:12:33,985 - connection - DEBUG - __writer: 717 - Prepare to send ChannelFrame(payload=b'\x01\x00\x01\x00\x00\x00;\x00<\x00\x14\x00\x00\x08run_task&ctag1.5ee2c02ec0ef4170adc896744ec2d05c\x00\x00\x00\x00\x00\xce', should_close=False, drain_future=None)
+2025-01-20 21:12:33,986 - connection - DEBUG - __reader: 642 - Received frame <Basic.ConsumeOk object at 0x23ef38788d0> in channel #1 weight=51 on <Connection: "amqp://guest:******@localhost:5672/" at 0x23ef38692c0>
+2025-01-20 21:12:38,955 - robust_connection - DEBUG - __connection_factory: 123 - Waiting for connection close event for <RobustConnection: "amqp://guest:******@localhost:5672/" 1 channels>
+2025-01-20 21:12:47,396 - connection - DEBUG - __writer: 717 - Prepare to send ChannelFrame(payload=b'\x01\x00\x01\x00\x00\x00,\x00<\x00\x1e&ctag1.dcdfedda94a54a89bb141baf7410a953\x00\xce', should_close=False, drain_future=None)
+2025-01-20 21:12:47,397 - connection - DEBUG - __reader: 642 - Received frame <Basic.CancelOk object at 0x23ef386cb10> in channel #1 weight=51 on <Connection: "amqp://guest:******@localhost:5672/" at 0x23ef38692c0>
+2025-01-20 21:12:47,398 - connection - DEBUG - __writer: 717 - Prepare to send ChannelFrame(payload=b'\x01\x00\x01\x00\x00\x00,\x00<\x00\x1e&ctag1.f6d38dda074a4c1e8f259ccd367d0dac\x00\xce', should_close=False, drain_future=None)
+2025-01-20 21:12:47,399 - connection - DEBUG - __reader: 642 - Received frame <Basic.CancelOk object at 0x23ef3813fd0> in channel #1 weight=51 on <Connection: "amqp://guest:******@localhost:5672/" at 0x23ef38692c0>
+2025-01-20 21:12:47,400 - connection - DEBUG - __writer: 717 - Prepare to send ChannelFrame(payload=b'\x01\x00\x01\x00\x00\x00,\x00<\x00\x1e&ctag1.aaf05fe28890456da5d8774a1511c54b\x00\xce', should_close=False, drain_future=None)
+2025-01-20 21:12:47,401 - connection - DEBUG - __reader: 642 - Received frame <Basic.CancelOk object at 0x23ef38788d0> in channel #1 weight=51 on <Connection: "amqp://guest:******@localhost:5672/" at 0x23ef38692c0>
+2025-01-20 21:12:47,401 - connection - DEBUG - __writer: 717 - Prepare to send ChannelFrame(payload=b'\x01\x00\x01\x00\x00\x00,\x00<\x00\x1e&ctag1.be7979f402b941fc958d675d5aeec860\x00\xce', should_close=False, drain_future=None)
+2025-01-20 21:12:47,403 - connection - DEBUG - __reader: 642 - Received frame <Basic.CancelOk object at 0x23ef386f510> in channel #1 weight=51 on <Connection: "amqp://guest:******@localhost:5672/" at 0x23ef38692c0>
+2025-01-20 21:12:47,403 - connection - DEBUG - __writer: 717 - Prepare to send ChannelFrame(payload=b'\x01\x00\x01\x00\x00\x00,\x00<\x00\x1e&ctag1.5ee2c02ec0ef4170adc896744ec2d05c\x00\xce', should_close=False, drain_future=None)
+2025-01-20 21:12:47,404 - connection - DEBUG - __reader: 642 - Received frame <Basic.CancelOk object at 0x23ef386ffd0> in channel #1 weight=51 on <Connection: "amqp://guest:******@localhost:5672/" at 0x23ef38692c0>
+2025-01-20 21:12:47,405 - channel - DEBUG - close: 128 - Closing channel <aio_pika.robust_channel.RobustChannel object at 0x0000023EF381D940>
+2025-01-20 21:12:47,405 - connection - DEBUG - __writer: 717 - Prepare to send ChannelFrame(payload=b'\x01\x00\x01\x00\x00\x00\x0b\x00\x14\x00(\x00\xc8\x00\x00\x00\x00\x00\xce', should_close=False, drain_future=None)
+2025-01-20 21:12:47,406 - connection - DEBUG - __reader: 642 - Received frame <Channel.CloseOk object at 0x23ef381f380> in channel #1 weight=12 on <Connection: "amqp://guest:******@localhost:5672/" at 0x23ef38692c0>
+2025-01-20 21:12:47,407 - connection - DEBUG - _on_close: 785 - Closing connection <Connection: "amqp://guest:******@localhost:5672/" at 0x23ef38692c0> cause: <class 'asyncio.exceptions.CancelledError'>
+2025-01-20 21:12:47,407 - connection - DEBUG - __writer: 742 - Sending <Connection.Close object at 0x23ef3869220> to <Connection: "amqp://guest:******@localhost:5672/" at 0x23ef38692c0>
+2025-01-20 21:12:47,408 - connection - DEBUG - __close_writer: 761 - Writer on connection amqp://guest:******@localhost:5672/ closed
+2025-01-20 21:12:47,408 - connection - DEBUG - _on_reader_done: 538 - Reader exited for <Connection: "amqp://guest:******@localhost:5672/" at 0x23ef38692c0>
+2025-01-20 21:12:47,408 - connection - DEBUG - __writer: 753 - Writer exited for <Connection: "amqp://guest:******@localhost:5672/" at 0x23ef38692c0>
+2025-01-20 21:12:47,408 - connection - DEBUG - _on_close: 785 - Closing connection <Connection: "amqp://guest:******@localhost:5672/" at 0x23ef38692c0> cause: CancelledError()

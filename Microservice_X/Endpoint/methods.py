@@ -1,11 +1,12 @@
 from fastapi import APIRouter
 from faststream.rabbit import RabbitBroker
 from faststream.rabbit.fastapi import RabbitRouter
+import os
 
 tasks = APIRouter()
-
-broker = RabbitBroker("amqp://guest:guest@localhost:5672/")
-router = RabbitRouter("amqp://guest:guest@localhost:5672/")
+rabbitmq_url = os.getenv("RABBITMQ_URL")
+broker = RabbitBroker(rabbitmq_url)
+router = RabbitRouter(rabbitmq_url)
 
 @tasks.get("/setud_database")
 async def setup_base():
