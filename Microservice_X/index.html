@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .result {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Task Manager</h1>
+
+<h2>Setup Database</h2>
+<button onclick="setupDatabase()">Setup Database</button>
+
+<h2>Get All Tasks</h2>
+<button onclick="getAllTasks()">Get All Tasks</button>
+<div id="all-tasks" class="result"></div>
+
+<h2>Get Task by ID</h2>
+<input type="number" id="task-id" placeholder="Enter Task ID">
+<button onclick="getTaskById()">Get Task</button>
+<div id="task-result" class="result"></div>
+
+<h2>Create Task</h2>
+<input type="number" id="new-task-value" placeholder="Enter Task Value">
+<button onclick="createTask()">Create Task</button>
+<div id="create-result" class="result"></div>
+
+<h2>Run Task</h2>
+<input type="number" id="run-task-id" placeholder="Enter Task ID to Run">
+<button onclick="runTask()">Run Task</button>
+<div id="run-result" class="result"></div>
+
+<script>
+    const apiUrl = "http://localhost:8000"; // Замените на URL вашего FastAPI приложения
+
+    async function setupDatabase() {
+        const response = await fetch(`${apiUrl}/setup_database`);
+        const result = await response.json();
+        alert(JSON.stringify(result));
+    }
+
+    async function getAllTasks() {
+        const response = await fetch(`${apiUrl}/get_all_task`);
+        const result = await response.json();
+        document.getElementById('all-tasks').innerText = JSON.stringify(result);
+    }
+
+    async function getTaskById() {
+        const taskId = document.getElementById('task-id').value;
+        const response = await fetch(`${apiUrl}/get_id_task?index=${taskId}`);
+        const result = await response.json();
+        document.getElementById('task-result').innerText = JSON.stringify(result);
+    }
+
+    async function createTask() {
+        const taskValue = document.getElementById('new-task-value').value;
+        const response = await fetch(`${apiUrl}/create_task`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(taskValue)
+        });
+        const result = await response.json();
+        document.getElementById('create-result').innerText = JSON.stringify(result);
+    }
+
+    async function runTask() {
+        const taskId = document.getElementById('run-task-id').value;
+        const response = await fetch(`${apiUrl}/run_task`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(taskId)
+        });
+        const result = await response.json();
+        document.getElementById('run-result').innerText = JSON.stringify(result);
+    }
+</script>
+
+</body>
+</html>

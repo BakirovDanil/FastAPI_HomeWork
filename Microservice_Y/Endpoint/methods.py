@@ -2,7 +2,7 @@ import asyncio
 from base.db import  SessionDep, engine, Base
 from base.modelORM import TaskORM
 from faststream.rabbit import RabbitBroker
-from Models.model import TaskSchema
+from Models.model import TaskSchema, TaskAddSchema
 from sqlalchemy import select
 import logging
 import os
@@ -41,7 +41,7 @@ async def setup_database():
 
 
 @broker.subscriber("create_task")
-async def create_task(value: int, session: SessionDep):
+async def create_task(task: TaskAddSchema, session: SessionDep):
     """
     Создает новую задачу в базе данных.
     Эта функция выполняет следующие действия:
@@ -55,7 +55,7 @@ async def create_task(value: int, session: SessionDep):
     :return: словарь с ключом "ok" и значением True
     """
     new_task = TaskORM(
-        value = value
+        value = task.value
     )
     session.add(new_task)
     await session.commit()
@@ -114,9 +114,10 @@ async def run_task(index: int, session: SessionDep):
     if task:
         answer = TaskSchema.model_validate(task, from_attributes = True)
         task.status = 'running'
-        task.result = fibonacci(task.value)
+        result = fibonacci(task.value)
         await session.commit()
         await asyncio.sleep(5)
+        task.result = result
         task.status = 'complete'
         await session.commit()
         logger.info("Задача по ID выполнена.")
